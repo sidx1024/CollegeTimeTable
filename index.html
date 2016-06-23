@@ -1,8 +1,8 @@
 <html>
 
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	<title>Material Themed College Timetable</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+    <title>Material Themed College Timetable - siddharth1024</title>
     <style>
         * {
             box-sizing: border-box;
@@ -25,192 +25,62 @@
             display: flex;
         }
         
-        .heading {
+        h1 {
             font-family: 'Montserrat', sans-serif;
-            color: #fff;
-            font-size: 14px;
-            padding: 4px;
-            padding-bottom: 8px;
+            font-size: 28px;
+            color: white;
+            margin: 0;
         }
         
-        .bottom pre {
-            font-family: 'Montserrat', sans-serif;
-            color: #fff;
-            font-size: 14px;
-            padding: 4px;
+        h2 {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            color: white;
+            font-weight: 500;
         }
         
-        #chrome {
-            width: 640px;
-            height: 480px;
-            background-color: #FCFBF0;
-            border-radius: 6px;
-            box-shadow: 4px 4px 10px #285599;
-            overflow: hidden;
-        }
-        
-        .col-7 {
+        .flex-column {
             flex-flow: column;
-            width: 14.28%;
-            height: 100%;
+            align-items: center;
         }
         
-        .col-7 + .col-7 {
-            border-left: 0.01px;
-            border-left-color: rgba(150, 150, 150, 0.9);
-            border-left-style: solid;
-        }
-        
-        .row-8:nth-child(even) {
-            background-color: #F0F5F3;
-        }
-        
-        .row-8 {
-            font-family: 'Montserrat', sans-serif;
-            width: 100%;
-            height: 12.5%;
+        .flex-row {
             flex-flow: row;
             justify-content: center;
-            align-items: center;
-            color: #314A4F;
         }
         
-        .double-row {
-            height: 25%;
-            background-color: #52C5DA !important;
+        #main {
+            margin-top: 20%;
         }
         
-        .font-color-white {
-            color: #111;
-        }
-        
-        .break {
-            background-color: #E7DCBC !important;
+        .btn {
+            font-family: 'Montserrat', sans-serif;
+            -webkit-border-radius: 4;
+            -moz-border-radius: 4;
+            border-radius: 4px;
+            color: #262626;
+            font-size: 14px;
+            background: #ffffff;
+            padding: 10px 20px 10px 20px;
+            border: solid #ffffff 1px;
+            text-decoration: none;
+            margin: 2px;
         }
     </style>
 </head>
 
-<body>
-    <span class="heading">
-       BVM&nbsp; &bull; &nbsp;CP&nbsp; &bull; &nbsp;SEMESTER 5&nbsp; &bull; &nbsp;2016
-   </span>
-    <div id="chrome">
-        <div class="col-7">
-            <div class="row-8 accent-1 font-color-white"></div>
-            <div class="row-8">8 - 11</div>
-            <div class="row-8">11 - 12</div>
-            <div class="row-8">12 - 1</div>
-            <div class="row-8">1 - 2</div>
-            <div class="row-8">2 - 3</div>
-            <div class="row-8">3 - 4</div>
-            <div class="row-8">4 - 5</div>
-            <div class="row-8">5 - 6</div>
+<body id="main" class="flex-row">
+    <div class="flex-column">
+        <h1>MATERIAL THEMED TIMETABLE</h1>
+        <h2>A simple HTML/CSS based timetable</h2>
+
+        <div class="flex-row">
+            <a aria-label="View siddharth1024/CollegeTimeTable on GitHub" href="https://github.com/siddharth1024/CollegeTimeTable" class="btn">VIEW ON GITHUB</a>
+            <a aria-label="Download siddharth1024/CollegeTimeTable on GitHub" href="https://github.com/siddharth1024/CollegeTimeTable/archive/master.zip" class="btn">DOWNLOAD</a>
+
         </div>
-        <div class="col-7">
-            <div class="row-8 accent-1 font-color-white">MON</div>
-            <div class="row-8"></div>
-            <div class="row-8">OOPJ</div>
-            <div class="row-8">SP</div>
-            <div class="row-8">MI</div>
-            <div class="row-8">DAA</div>
-            <div class="row-8 break">BREAK</div>
-            <div class="row-8 double-row">
-                A &nbsp;DAA
-                <br> B &nbsp;OOPJ
-                <br> C &nbsp;SP
-                <br> D &nbsp;MI
-                <br> E &nbsp;CS
-            </div>
-        </div>
-        <div class="col-7">
-            <div class="row-8 accent-1 font-color-white">TUE</div>
-            <div class="row-8"></div>
-            <div class="row-8">SP</div>
-            <div class="row-8">DAA</div>
-            <div class="row-8">OOPJ</div>
-            <div class="row-8">MI</div>
-            <div class="row-8 break">BREAK</div>
-            <div class="row-8" style="display:none"></div>
-            <div class="row-8 double-row">
-                A &nbsp;CS
-                <br> B &nbsp;DAA
-                <br> C &nbsp;OOPJ
-                <br> D &nbsp;SP
-                <br> E &nbsp;MI
-            </div>
-        </div>
-        <div class="col-7">
-            <div class="row-8 accent-1 font-color-white">WED</div>
-            <div class="row-8"></div>
-            <div class="row-8">MI</div>
-            <div class="row-8">OOPJ</div>
-            <div class="row-8">SP</div>
-            <div class="row-8">DAA</div>
-            <div class="row-8 break">BREAK</div>
-            <div class="row-8">Counselling</div>
-            <div class="row-8">SBA</div>
-        </div>
-        <div class="col-7">
-            <div class="row-8 accent-1 font-color-white">THU</div>
-            <div class="row-8"></div>
-            <div class="row-8">DAA</div>
-            <div class="row-8" style="display:none"></div>
-            <div class="row-8 double-row">
-                A &nbsp;MI
-                <br> B &nbsp;CS
-                <br> C &nbsp;DAA
-                <br> D &nbsp;OOPJ
-                <br> E &nbsp;SP
-            </div>
-            <div class="row-8">CS-T
-                <br>A, B, C</div>
-            <div class="row-8"></div>
-            <div class="row-8"></div>
-            <div class="row-8"></div>
-        </div>
-        <div class="col-7">
-            <div class="row-8 accent-1 font-color-white">FRI</div>
-            <div class="row-8">DE
-                <br>A, B</div>
-            <div class="row-8">OOPJ</div>
-            <div class="row-8" style="display:none"></div>
-            <div class="row-8 double-row">
-                A &nbsp;SP
-                <br> B &nbsp;MI
-                <br> C &nbsp;CS
-                <br> D &nbsp;DAA
-                <br> E &nbsp;OOPJ
-            </div>
-            <div class="row-8 break">BREAK</div>
-            <div class="row-8">CS-T
-                <br>D, E</div>
-            <div class="row-8">MI</div>
-            <div class="row-8">SP</div>
-        </div>
-        <div class="col-7">
-            <div class="row-8 accent-1 font-color-white">SAT</div>
-            <div class="row-8">DE
-                <br>C, D, E</div>
-            <div class="row-8 break">BREAK</div>
-            <div class="row-8" style="display:none"></div>
-            <div class="row-8 double-row">
-                A &nbsp;OOPJ
-                <br> B &nbsp;SP
-                <br> C &nbsp;MI
-                <br> D &nbsp;CS
-                <br> E &nbsp;DAA
-            </div>
-            <div class="row-8"></div>
-            <div class="row-8"></div>
-            <div class="row-8"></div>
-            <div class="row-8"></div>
-        </div>
-    </div>
-    <div class="bottom">
-        <pre>
-        &bull; DE :     A, B  LAB-8   /   C  LAB-3   /   D  LAB-4                 
-        &bull; CS-T :  A LAB-4   /   B LAB-3   /   C, D  LAB-5   /  E LAB-6 
-        </pre>
+        <img src="img/preview.png">
+
     </div>
 </body>
 
